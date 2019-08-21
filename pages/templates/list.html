@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page</title>
+</head>
+<body>
+	{% for page in pages %}
+		<a href="{{page.get_absolute_url}}">
+			<ul>
+				<li> {{page.title}} </li>
+			</ul>
+	{% endfor %}
+</body>
+</html>
